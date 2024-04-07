@@ -7,7 +7,8 @@ public abstract class Kendaraan {
     int tahun;
 
     public abstract void Start();
-    
+    public abstract void Stop(); // Method abstract Stop
+
     public void getInfo(){
         System.out.println("Kendaraan: " + name);
         System.out.println("Model : " + model);
@@ -46,4 +47,6 @@ public abstract class Kendaraan {
     public void setTahun(int tahun){
         this.tahun = tahun;
     }
+
+    public abstract void Brake(); // Method abstract Brake
 }
